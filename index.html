@@ -72,15 +72,15 @@
             justify-content: center;
             background: var(--primary);
             color: white;
-            padding: 16px 36px;
-            border-radius: 12px;
+            padding: 14px 32px;
+            border-radius: 10px;
             font-weight: 600;
             transition: var(--transition);
             border: none;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 15px;
             box-shadow: var(--shadow);
-            gap: 10px;
+            gap: 8px;
             position: relative;
             overflow: hidden;
             z-index: 1;
@@ -103,22 +103,22 @@
         }
 
         .btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(139, 92, 246, 0.4);
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(139, 92, 246, 0.4);
         }
 
-        /* Header Styles */
+        /* Header Styles - Redesigned */
         header {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             z-index: 1000;
-            padding: 20px 0;
+            padding: 18px 0;
             transition: var(--transition);
-            background: var(--glass);
-            backdrop-filter: blur(15px);
-            border-bottom: 1px solid var(--glass-border);
+            background: rgba(15, 23, 42, 0.92);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(148, 163, 184, 0.08);
         }
 
         .navbar {
@@ -130,8 +130,8 @@
         .logo {
             display: flex;
             align-items: center;
-            font-size: 28px;
-            font-weight: 800;
+            font-size: 26px;
+            font-weight: 700;
             color: white;
             letter-spacing: -0.5px;
         }
@@ -140,9 +140,15 @@
             color: var(--primary-light);
         }
 
+        .logo i {
+            color: var(--primary);
+            margin-right: 10px;
+            font-size: 28px;
+        }
+
         .nav-links {
             display: flex;
-            gap: 35px;
+            gap: 30px;
         }
 
         .nav-links a {
@@ -150,6 +156,7 @@
             position: relative;
             padding: 8px 0;
             font-size: 16px;
+            color: var(--light-gray);
         }
 
         .nav-links a::after {
@@ -158,10 +165,14 @@
             bottom: 0;
             left: 0;
             width: 0;
-            height: 3px;
+            height: 2px;
             background: var(--primary);
             transition: var(--transition);
-            border-radius: 3px;
+            border-radius: 2px;
+        }
+
+        .nav-links a:hover {
+            color: white;
         }
 
         .nav-links a:hover::after {
@@ -176,7 +187,7 @@
 
         /* Hero Section */
         .hero {
-            padding-top: 150px;
+            padding-top: 140px;
             padding-bottom: 100px;
             overflow: hidden;
         }
@@ -881,7 +892,7 @@
 
         @media (max-width: 768px) {
             .hero {
-                padding-top: 180px;
+                padding-top: 150px;
                 padding-bottom: 80px;
             }
             .hero h1 {
@@ -924,13 +935,16 @@
                 font-size: 17px;
             }
             .logo {
+                font-size: 22px;
+            }
+            .logo i {
                 font-size: 24px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header - Redesigned -->
     <header>
         <div class="container">
             <nav class="navbar">
@@ -943,10 +957,9 @@
                     <a href="#channels">Channels</a>
                     <a href="#how-it-works">Process</a>
                     <a href="#testimonials">Testimonials</a>
-                    <a href="#faq">FAQ</a>
                 </div>
                 <div class="nav-cta">
-                    <a href="#contact" class="btn">Contact Us</a>
+                    <a href="#contact" class="btn">Contact</a>
                 </div>
             </nav>
         </div>
@@ -1372,7 +1385,6 @@
                         <li><a href="#channels"><i class="fas fa-chevron-right"></i> Browse Channels</a></li>
                         <li><a href="#how-it-works"><i class="fas fa-chevron-right"></i> How It Works</a></li>
                         <li><a href="#testimonials"><i class="fas fa-chevron-right"></i> Testimonials</a></li>
-                        <li><a href="#faq"><i class="fas fa-chevron-right"></i> FAQ</a></li>
                     </ul>
                 </div>
                 
